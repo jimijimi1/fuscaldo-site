@@ -1,3 +1,5 @@
+
+/*general style formatting*/
 body {
     font-family: Arial, sans-serif;
     max-width: auto;
@@ -17,28 +19,26 @@ a {
 
 a:hover {
     text-decoration: underline;
-
 }
 
 h1 {
     text-align: center;
-
 }
 
 
+/*this centers items on the page*/
 .center-line {
     text-align: center;
     margin: 20px 0;
-
 }
 
 
+/*this creates the back to home button on top left of each page*/
 header nav {
     position: fixed;
     top: 10px;
     left: 10px
     z-index: 1000;
-
 }
 
 
@@ -48,12 +48,80 @@ header nav a {
     color: #fafafa;
     padding: 5px 10px;
     border-radius: 5px;
-
 }
 
 
 header nav a:hover {
     text-decoration: underline;
-
 }
+
+
+/*this creates stationary links to pages within parent pages.*/
+.link-box nav {
+    border: 1px solid #fafafa;
+    padding: 1rem;
+    margin: 1.5rem;
+    border-radius: 10px;
+}
+
+.link-box nav a {
+    text-decoration: underline;
+    margin: 0;
+    color: #fafafa;
+    font-size: 1.5em;
+}
+
+.link-box nav a:hover {
+    font-weight: bold;
+}
+
+
+/*this positions link boxes next to eachother also centers them on a page*/
+.link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+/*this creates navigation buttons at the top right of the screen for sub-pages to link back to their parent page*/
+section nav {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+
+section nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fafafa;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+section nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

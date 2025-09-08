@@ -5,19 +5,86 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Watch Time</title>
         <link rel="stylesheet" href="../../assets/styles.css">
+    <style>
+        /*creates watch list*/
+        ul.watch-list li {
+            font size: 0.83em;
+            margin: .5em;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .box {
+            display: inline-block;
+            border: 1px solid #fafafa;
+            padding: 1rem;
+            margin: 1.5rem auto;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+
+        /*creates picture gallery*/
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0px;
+            max-width: 50%;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+    </style>
     </head>
     <body class="center-line">
-        <h1>Wrist Watching.</h1>
-        <h2>As a fan of all things engineering and mechanical, wristwatches are an example of the many feats of engineering that often go unnoticed in day-to-day life.</h2>
-        <p>My collection consists of the following:</p>
-        <p></p>
-        <p>IWC Mark XX</p>
-        <p>Junghans Form A Chronoscope</p>
-        <p>Hamilton Khaki Feild</p>
+        <h2>Wrist Watching.</h2>
+        <p>Horology, an appreciation for fine craftsmanship, or an excuse for men to wear jewelry? Either way, I'm all about it!</p>
+    <br>
+    <div class="gallery">
+        <img src="../../pics/iwc.png" alt="IWC Mark XX Pilot's Watch (White Dial on Bracelet)">
+        <img src="../../pics/junghans.png" alt="Junghans Form A Chronoscope (Black)">
+        <img src="../../pics/prx.png" alt="Tissot PRX Powermatic 80 (Black on Bracelet)">
+        <img src="../../pics/hamilton.png" alt="Hamilton Khaki Feild (Titanium Case with Black Dial on NATO Strap)">
+        <img src="../../pics/willwood.png" alt="William Wood Fire Escape">
+        <img src="../../pics/tudors.png" alt="Two Tudor Watches: Pelagos with Black Dial, Pelagos Ultra with Black Dial">
+    </div>
+    <section">
+    <br>
+    <div class="box">
+        <section class="center-line">
+            <h3><p><u>My collection consists of the following:</u></p></h3>
+            <ul class="watch-list">
+                <li>IWC Mark XX</li>
+                <li>Junghans Form A Chronoscope</li>
+                <li>Tissot PRX</li>
+                <li>Hamilton Khaki Feild</li>
+                <li>William Wood Fire Exit</li>
+            </ul>
+        </section>
+    </div>
+    <br>
+    </section>
+        <p>I do own a few more watches, but none that I find noteworthy enough to include in the main list.</p>
+    <div class="link-container">
+        <div class="link-box">
+            <nav>
+                <a href="../../posts/watch-time/watch-info/index.html">Click here to learn more about each watch!</a>
+            </nav>
+        </div>
+        <div class="link-box">
+            <nav>
+                <a href="../../posts/watch-time/watch-updates/index.html">Click here to see updates about the collection!</a>
+            </nav>
+        </div>
+    </div>
     <header>
         <nav>
             <a href="../../index.html"><== Back To Home</a>
-        <nav>
+        </nav>
     </header>
     </body>
 </html>
