@@ -55,6 +55,16 @@ header nav a:hover {
     text-decoration: underline;
 }
 
+/*this creates a simple box and border around an object*/
+.box {
+    display: inline-block;
+    border: 1px solid #fafafa;
+    padding: 1rem;
+    margin: 1.5rem auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
 
 /*this creates stationary links to pages within parent pages.*/
 .link-box nav {
@@ -106,6 +116,7 @@ section nav a {
 section nav a:hover {
     text-decoration: underline;
 }
+
 
 
 
