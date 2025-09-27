@@ -13,7 +13,6 @@
     --space-lg: 1.5rem;
 }
 
-
 /* General Style Formatting */
 body {
     font-family: Arial, sans-serif;
@@ -22,36 +21,28 @@ body {
     background: var(--bg);
     color: var(--text);
 }
-
-
 a {
     color: var(--link);
     text-decoration: none;
 }
-
-
 a:hover {
     text-decoration: underline;
     color: var(--link-hover);
 }
 
-
-/*this centers items on the page*/
+/*centers items on the page*/
 .center-line {
     text-align: center;
     margin: 20px 0;
 }
 
-
-/*this creates the back to home button on top left of each page*/
+/*creates the back to home button on top left of each page*/
 header nav {
     position: fixed;
     top: 10px;
     left: 10px;
     z-index: 1000;
 }
-
-
 header nav a {
     text-decoration: none;
     font-weight: bold;
@@ -59,13 +50,11 @@ header nav a {
     padding: 5px 10px;
     border-radius: var(--radius);
 }
-
-
 header nav a:hover {
     text-decoration: underline;
 }
 
-/*this creates a simple box and border around an object*/
+/*creates a simple box and border around an object*/
 .box {
     display: inline-block;
     border: 1px solid var(--border);
@@ -75,26 +64,22 @@ header nav a:hover {
     text-align: center;
 }
 
-
-/*this creates stationary links to pages within parent pages.*/
+/*creates stationary links to pages within parent pages.*/
 .link-box nav {
     border: 1px solid var(--border);
     padding: var(--space);
     margin: var(--space-lg);
     border-radius: var(--radius);
 }
-
 .link-box nav a {
     text-decoration: underline;
     margin: 0;
     color: var(--text);
     font-size: 1.5em;
 }
-
 .link-box nav a:hover {
     font-weight: bold;
 }
-
 
 /*this positions link boxes next to eachother also centers them on a page*/
 .link-container {
@@ -104,16 +89,13 @@ header nav a:hover {
     margin: 20px 0;
 }
 
-
-/*this creates navigation buttons at the top right of the screen for sub-pages to link back to their parent page*/
+/*creates navigation buttons at the top right of the screen for sub-pages to link back to their parent page*/
 section nav {
     position: fixed;
     top: 10px;
     right: 10px;
     z-index: 1000;
 }
-
-
 section nav a {
     text-decoration: none;
     font-weight: bold;
@@ -121,8 +103,6 @@ section nav a {
     padding: 5px 10px;
     border-radius: var(--radius);
 }
-
-
 section nav a:hover {
     text-decoration: underline;
 }
