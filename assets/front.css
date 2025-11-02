@@ -224,7 +224,7 @@ header nav {
 .menu-title .emoji{
 	position: absolute;
 	top: 25%;
-	transform: tranlateY(-50%);
+	transform: translateY(-15%);
 	font-size: 1rem;
 	line-height: 1;
 	pointer-events: none;
