@@ -1,19 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="icon" href="pics/favicon/jimi.ico" sizes="any">
+        <link rel="apple-touch-icon" sizes="180x180" href="pics/favicon/apple-jimi.png">
         <title>Fuscaldo Corner</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/styles.css">
-    </head>
-    <body class="center-line">
-        <h1>Welcome to Fuscaldo.org!</h1>
-        <h2>This is my corner to log everything I find interesting.</h2>
-        <p><a href="posts/site-updates/index.html">Sitewide News and Updates! ==></a></p>
-        <p><a href="posts/hello-world/index.html">Read My First Post ==></a></p>
-        <p><a href="posts/watch-time/index.html">Wrist Wactching ==></a></p>
-        <p><a href="posts/the-farm/index.html">The Farm ==></p>
-        <p><a href="posts/marks-demerits/index.html">Read Mark's Most Recent Delusions ==></a></p>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/front.css">
+        <meta name="description" content="Fuscaldo.org is where I basically journal but in such a way that I find fun. From watches to cannabis cultivation, there is likely something for everyone.">
+        <meta name="robots" content="index, follow">
+	</head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="head-label">Fuscaldo.org</div>
+                <div class="pill">📖️ Curated by Jimi 🦆️ | 🔧️ Updated Regularly ⚙️</div>
+            </nav>
+        </header>
+        <main class="container">
+            <div class="pic-row">
+                <div class="fade-box" style="--fade-duration: 12s;">
+                    <img src="pics/cardinal.png">
+                    <img src="pics/iwcnobg.png">
+                    <img src="pics/jimi.png">
+                </div>
+
+                <div class="tc lift">
+                    <h1>Welcome to Fuscaldo.org!</h1>
+                </div>
+            
+                <div class="fade-box" style="--fade-duration: 12s;">
+                    <img src="pics/dove.png">
+                    <img src="pics/leaf.png">
+                    <img src="pics/mark.png">
+                </div>
+            </div>
+     		<h1 class="center-line">
+				↓ Explore the Site! ↓
+			</h1>
+			<section class="menu">
+				<a class="menu-box" href="posts/watch-time/index.html">
+					<h3 class="menu-title">
+						<span class= "emoji left">⌚</span>
+						Watch Time
+						<span class= "emoji right">⏰</span>
+					</h3>
+					<p>See the collection, learn about each watch, and see accuracy logs.</p>
+				</a>
+				<a class="menu-box" href="posts/site-updates/index.html">
+					<h3 class="menu-title">
+						<span class="emoji left">📜</span>
+						News and Updates
+						<span class="emoji right">🔧</span>
+					</h3>
+					<p>Get caught up with the latest changes and news!</p>
+				</a>
+				<a class="menu-box" href="posts/manufacturing/index.html">
+					<h3 class="menu-title">
+						<span class="emoji left">🌱</span>
+						Manufacturing
+						<span class="emoji right">🍺</span>
+					</h3>
+					<p>Grow updates, harvest photos, beer brewing and more.</p>
+				</a>
+				<a class="menu-box" href="posts/avian-station/index.html">
+					<h3 class="menu-title">
+						<span class="emoji left">🦜</span>
+						Avian Station
+						<span class="emoji right">🔭</span>
+					</h3>
+					<p>Bird sightings, birding logs, updates from the feeder.</p>
+				</a>
+				<a class="menu-box" href="posts/marks-demerits/index.html">
+					<h3 class="menu-title">
+						<span class="emoji left">🧠</span>
+						Mark's Demerits
+						<span class="emoji right">🥸</span>
+					</h3>
+					<p>Read Mark's most recent delusions and preferences.</p>
+				</a>
+				<a class="menu-box" href="oldindex.html">
+					<h3 class="menu-title">
+						<span class="emoji left">📖</span>
+						Old Site
+						<span class="emoji right">⏳</span>
+					</h3>
+					<p>A look at what the old front page used to be.</p>
+				</a>
+				<div class="menu-box-blank">
+				</div>
+				<a class="menu-box" href="posts/hello-world/index.html">
+					<h3 class="menu-title">
+						<span class="emoji left">📞</span>
+						About & Contact
+						<span class="emoji right">❓</span>
+					</h3>
+					<p>Information about Fuscaldo.org and contact info.</p>
+				</a>
+			</section>
+			<section class="ribbon">
+				<div class="rock">
+					<span>🦆️ Bird Watching 🔭️</span>
+					<span>⌚️ Wristwatch Collecting 🕰️</span>
+					<span>🥸️ Bizzare Thoughts 🧠️</span>
+					<span>📰️ Site Updates and News ⤴️</span>
+					<span>👨‍🌾 Grow Updates 🌿</span>
+					<span>🍻 Beer Brewing ⚗️</span>
+					<span>🦆️ Bird Watching 🔭️</span>
+					<span>⌚️ Wristwatch Collecting 🕰️</span>
+					<span>🥸️ Bizzare Thoughts 🧠️</span>
+					<span>📰️ Site Updates and News ⤴️</span>
+					<span>👨‍🌾 Grow Updates 🌿</span>
+					<span>🍻 Beer Brewing ⚗️</span>
+				</div>
+			</section>
+	  <!--	<section class="deck">
+			  <article class="card-xs">
+				<header class="card-head">
+				  <h3>🧨 Minesweeper</h3>
+				  <div class="ms-controls">
+					<button id="ms-restart" aria-label="Restart">↻</button>
+					<span>⏱ <span id="ms-timer">0</span>s</span>
+					<span>🚩 <span id="ms-flags">10</span></span>
+				  </div>
+				</header>
+				<div id="minesweeper" class="ms-grid" role="grid" aria-label="Minesweeper board"></div>
+			  </article>
+			</section> -->
+        </main>
+      <!--  <script>
+			(() => {
+			  const W = 9, H = 9, MINES = 10;
+			  const boardEl = document.getElementById('minesweeper');
+			  const timerEl = document.getElementById('ms-timer');
+			  const flagsEl = document.getElementById('ms-flags');
+			  const restartBtn = document.getElementById('ms-restart');
+			  let cells=[], mines=new Set(), revealed=0, flags=MINES, started=false, timerInt=null, dead=false, win=false;
+
+			  function idx(x,y){return y*W+x}
+			  function xy(i){return [i%W, (i/W)|0]}
+			  function neighbors(i){
+				const [x,y]=xy(i), out=[];
+				for(let dy=-1;dy<=1;dy++)for(let dx=-1;dx<=1;dx++){
+				  if(dx||dy){const nx=x+dx, ny=y+dy; if(nx>=0&&nx<W&&ny>=0&&ny<H) out.push(idx(nx,ny));}
+				} return out;
+			  }
+			  function layMines(safeIndex){
+				while(mines.size<MINES){
+				  const pick = Math.floor(Math.random()*W*H);
+				  if(pick===safeIndex) continue;
+				  mines.add(pick);
+				}
+			  }
+			  function countMines(i){ return neighbors(i).reduce((a,n)=>a+mines.has(n),0) }
+
+			  function startTimer(){
+				if(timerInt) return;
+				let t=0; timerEl.textContent='0';
+				timerInt=setInterval(()=>{ t++; timerEl.textContent=String(t) },1000);
+			  }
+			  function stopTimer(){ clearInterval(timerInt); timerInt=null; }
+
+			  function reveal(i){
+				if(dead||win) return;
+				const el=cells[i]; if(el.classList.contains('revealed')||el.classList.contains('flag')) return;
+				if(!started){ started=true; layMines(i); startTimer(); }
+				if(mines.has(i)){
+				  el.classList.add('revealed','mine'); gameOver(false); return;
+				}
+				flood(i);
+				if(revealed===W*H-MINES){ gameOver(true); }
+			  }
+			  function flood(start){
+				const q=[start];
+				while(q.length){
+				  const i=q.pop(), el=cells[i];
+				  if(el.classList.contains('revealed')||el.classList.contains('flag')) continue;
+				  el.classList.add('revealed'); revealed++;
+				  const cnt=countMines(i);
+				  if(cnt>0){ el.textContent=cnt; el.classList.add('num-'+cnt); }
+				  else { neighbors(i).forEach(n=>{ if(!cells[n].classList.contains('revealed')) q.push(n); }); }
+				}
+			  }
+			  function toggleFlag(i){
+				if(dead||win) return;
+				const el=cells[i];
+				if(el.classList.contains('revealed')) return;
+				if(el.classList.toggle('flag')) { flags--; } else { flags++; }
+				flagsEl.textContent=String(flags);
+			  }
+			  function gameOver(victory){
+				win=victory; dead=!victory; stopTimer();
+				if(!victory){
+				  // show mines
+				  mines.forEach(m=>{ const el=cells[m]; el.classList.add('revealed','mine'); });
+				  alert('Boom! Try again.');
+				} else { alert('You win!'); }
+			  }
+			  function build(){
+				boardEl.innerHTML=''; boardEl.style.setProperty('--cell', '30px');
+				cells=[]; mines.clear(); revealed=0; flags=MINES; flagsEl.textContent=String(flags);
+				started=false; dead=false; win=false; stopTimer(); timerEl.textContent='0';
+				for(let i=0;i<W*H;i++){
+				  const d=document.createElement('button');
+				  d.type='button'; d.className='ms-cell'; d.setAttribute('role','gridcell'); d.dataset.i=i;
+				  d.addEventListener('click', ()=>reveal(i));
+				  d.addEventListener('contextmenu', (e)=>{ e.preventDefault(); toggleFlag(i); });
+				  cells.push(d); boardEl.appendChild(d);
+				}
+			  }
+			  restartBtn.addEventListener('click', build);
+			  build();
+			})();
+		</script> -->
     </body>
 </html>
-

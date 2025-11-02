@@ -1,0 +1,198 @@
+:root {
+	--bg: #1E5D1E;
+	--text: #eff0f5;
+	--link: #ff6b81;
+	--link-hover: #cc5066;
+	--border: #c4c7d9;
+	--box-bg: #2B8635;
+	--box-border: #004007;
+	--shadow: rgba(0,0,0,.5);
+	
+	--radius: 10px;
+	--space-sm: 0.5rem;
+	--space: 1rem;
+	--space-lg: 1.5rem;
+}
+
+/* General Style Formatting */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1500;
+    margin: 0 auto;
+    color: var(--text);
+    text-shadow: 2px 2px 6px #000;
+
+	background-color: #1f3b22;
+    background-image: url("../pics/leaf.png");
+    background-repeat: repeat;
+    background-size: 100px;
+    background-position: center;
+    background-attachment: fixed;
+}
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: var(--link-hover);
+}
+
+/*this centers items on the page*/
+.center-line {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/*creates the back to home button on top left of each page*/
+header nav {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+header nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text);
+    padding: 5px 10px;
+    border-radius: var(--radius);
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/*creates a simple box and border around an object*/
+.box {
+    display: inline-block;
+    border: 1px solid var(--border);
+    padding: var(--space);
+    margin: var(--space-lg) auto;
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+/*creates stationary links to pages within parent pages.*/
+.link-box nav {
+    border: 1px solid var(--border);
+    padding: var(--space);
+    margin: var(--space-lg);
+    border-radius: var(--radius);
+}
+.link-box nav a {
+    text-decoration: underline;
+    margin: 0;
+    color: var(--text);
+    font-size: 1.5em;
+}
+.link-box nav a:hover {
+    font-weight: bold;
+}
+
+/*this positions link boxes next to eachother also centers them on a page*/
+.link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/*creates navigation buttons at the top right of the screen for sub-pages to link back to their parent page*/
+section nav {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+section nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text);
+    padding: 5px 10px;
+    border-radius: var(--radius);
+}
+section nav a:hover {
+    text-decoration: underline;
+}
+
+/*Creates Menu and Menu Box*/
+.container {
+	max-width: 1500px;
+	margin: 0 auto;
+	position: relative;
+	padding: 5px;
+	z-index: 1;
+	align-items: center;
+}
+.menu {
+	display: grid;
+	margin: 0 auto;
+	max-width: 1000px;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
+	align-items: center;
+	border: none;
+	border-radius: 5px;
+	padding: var(--space);
+}
+.menu--single {
+	grid-template-columns: 1fr;
+	max-width: 750px;
+}
+.menu-box {
+	display: block;
+	background: var(--box-bg);
+	border: 1px solid var(--box-border);
+	border-radius: var(--radius);
+	padding: 10px;
+	box-shadow: 0 5px 15px 0 var(--shadow);
+}
+.menu-box-blank {
+	display: block;
+	background: var(--bg);
+	border: none;
+	padding: 10px;
+	box-shadow: none;
+}
+.menu-box:hover {
+	transform: translateY(-4px);
+	transition: transform .2s ease, box-shadow .2s ease;
+}
+.menu-title {
+	position: relative;
+	margin: .25rem 0 .25rem;
+	text-align: center;
+	font-weight: 700;
+	text-decoration: underline;
+	padding: .5rem 0 0 0;
+	text-wrap: balance;
+}
+.menu-title .emoji{
+	position: absolute;
+	top: 25%;
+	transform: translateY(-15%);
+	font-size: 1rem;
+	line-height: 1;
+	pointer-events: none;
+}
+.menu-title .left {
+	left: 1rem;
+}
+.menu-title .right {
+	right: 1rem;
+}
+.menu-box p {
+	font-weight: 500;
+	margin: .5rem .25rem .25rem .25rem;
+}
+.menu-box .emoji {
+	font-size: 1.5rem;
+}
+@media (max-width: 600px){
+	.menu-title {
+		padding: 0;
+	}
+	.menu-title .emoji {
+		display: none;
+	}
+}
